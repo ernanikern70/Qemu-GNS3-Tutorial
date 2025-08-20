@@ -18,7 +18,7 @@ Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizad
 -->
 ## Ambiente
 
-Downloads:  
+##### Downloads:  
 
 - [GNS3](https://www.gns3.com/software/download)  
 
@@ -26,7 +26,7 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 - [Qemu](https://www.qemu.org/)  
 
-Para testes de rede neste projeto, usaremos a imagem do FortiOS, anexado no repositório (para uso livre, máx. 2GB RAM, 1 processador). Primeiro acesso = admin/(sem senha).   
+Para testes de rede neste projeto, usaremos a imagem do __FortiOS__, anexado no repositório (para uso livre, máx. 2GB RAM, 1 processador). Primeiro acesso = admin/(sem senha).   
 
 
 ---
