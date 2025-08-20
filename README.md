@@ -26,6 +26,9 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 - [Qemu](https://www.qemu.org/)  
 
+Para testes de rede neste projeto, usaremos a imagem do FortiOS, anexado no repositório (para uso livre, máx. 2GB RAM, 1 processador).  
+
+
 ---
 <!--
 " }}}
