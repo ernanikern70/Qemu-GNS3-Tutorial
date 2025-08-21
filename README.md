@@ -39,6 +39,7 @@ Para versão Trial, máximo 2GB de RAM, 1 processador.
 Uma interface de rede em modo 'Bridge', outra em 'Internal Network'
 
 Usuário 'admin', sem senha, irá solicitar criação no primeiro login.  
+
 ---
 <!--
 " }}}
