@@ -28,6 +28,14 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 Para testes de rede neste projeto, usaremos a imagem do __FortiOS__, anexado no repositório (para uso livre, máx. 2GB RAM, 1 processador). Primeiro acesso = admin/(sem senha).   
 
+##### Configurações das estações clientes: 
+
+Uma interface de rede em modo 'Internal Network'  
+
+##### Configurações do Fortigate: 
+
+Uma interface de rede em modo 'Bridge', outra em 'Internal Network'
+
 
 ---
 <!--
