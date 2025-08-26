@@ -44,7 +44,9 @@ A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da in
 
     - VM pronta baixada de [OsBoxes.org](https://osboxes.org) - VM no formato .vdi, convertida em .qcow2 com _qemu-img convert_
 
-    - Uma interface de rede em modo 'Internal Network'  
+    - Credenciais padrão 'osboxes/osboxes.org'
+
+    - Uma interface de rede em modo 'Internal Network'; basta conectá-la à instância NAT e subir a interface para pegar DHCP, ou configurar IP estático em /etc/netplan/. 
 
 
 ---
