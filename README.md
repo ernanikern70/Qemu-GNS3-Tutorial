@@ -21,6 +21,7 @@ Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizad
 ##### Downloads:  
 
 - [GNS3](https://www.gns3.com/software/download)  
+<a href="https://www.gns3.com/software/download" target="_blank">GNS3</a>
 
 O Qemu deve ser instalado automaticamente, caso negativo: 
 
