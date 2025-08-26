@@ -21,7 +21,6 @@ Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizad
 ##### Downloads:  
 
 - [GNS3](https://www.gns3.com/software/download)  
-<a href="https://www.gns3.com/software/download" target="_blank">GNS3</a>
 
 O Qemu deve ser instalado automaticamente, caso negativo: 
 
@@ -43,7 +42,7 @@ A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da in
 
 - Bodhi Linux 7.0.0
 
-    - VM pronta baixada de [OsBoxes.org](https://osboxes.org target="_blank") - VM no formato .vdi, convertida em .qcow2 com _qemu-img convert_
+    - VM pronta baixada de [OsBoxes.org](https://osboxes.org) - VM no formato .vdi, convertida em .qcow2 com _qemu-img convert_
 
     - Uma interface de rede em modo 'Internal Network'  
 
