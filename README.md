@@ -31,13 +31,6 @@ Para testes de rede neste projeto, usei imagens do Ubuntu Server 24.04 baixadas 
 
 Uma interface de rede em modo 'Internal Network'  
 
-##### Configurações do Fortigate: 
-
-Para versão Trial, máximo 2GB de RAM, 1 processador.  
-
-Uma interface de rede em modo 'Bridge', outra em 'Internal Network'
-
-Usuário 'admin', sem senha, irá solicitar criação no primeiro login.  
 
 ---
 <!--
