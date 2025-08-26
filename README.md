@@ -36,7 +36,7 @@ A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da in
 
     - Interface conectada à instância NAT do GNS3 (Internet): 192.168.122.10/24  
 
-    - Interface conectada à rede interna 
+    - Interface conectada à rede interna: 10.255.255.1./28 
 
     - Serviços: 
         - DHCP
@@ -52,6 +52,7 @@ A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da in
 
     - Uma interface de rede em modo 'Internal Network'; basta conectá-la à instância NAT e subir a interface para pegar DHCP, ou configurar IP estático em /etc/netplan/. 
 
+    - Rede interna: 10.255.255.5/28
 
 ---
 <!--
