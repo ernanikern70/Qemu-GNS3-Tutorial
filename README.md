@@ -28,7 +28,7 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 Para testes de rede neste projeto, usei VMs do Ubuntu Server e Bodhi Linux (mais leves) no formato Qemu (.qcow2). Para conectar o servidor à Internet, editei o arquivo '/etc/netplan/01-net-cfg.yaml' conforme abaixo e conectei a VM a uma instância 'Nat' do GNS3.    
 
-A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da interface __virbr0__ que deve estar ativa no host (rede 192.168.122.0/24).
+A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da interface __virbr0__ que deve estar ativa no host (rede 192.168.122.0/24 - virbr0 = 192.168.122.1).
 
 ##### Configurações do servidor: 
 
@@ -37,6 +37,10 @@ A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da in
     - Interface conectada à instância NAT do GNS3 (Internet): 192.168.122.10/24  
 
     - Interface conectada à rede interna 
+
+    - Serviços: 
+        - DHCP
+        - Ansible Server
 
 ##### Configurações das estações clientes: 
 
