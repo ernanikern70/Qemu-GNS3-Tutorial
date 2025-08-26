@@ -26,8 +26,23 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 - [Qemu](https://www.qemu.org/)  
 
+<<<<<<< HEAD
 Para testes de rede neste projeto, usei imagens do Ubuntu Server 24.04 baixadas do site [OsBoxes.org](https://osboxes.org), que são bastante 'cruas' - tem apenas o básico do S.O. instalado, sem ping, vi, nano, edit, etc. Para conectar o servidor à Internet, editei o arquivo '/etc/netplan/01-net-cfg.yaml' conforme abaixo e conectei a VM a uma instância 'Nat' do GNS3.    
+=======
+Para testes de rede neste projeto, usaremos a imagem do __FortiOS__, anexado no repositório (ver configurações abaixo).   
+>>>>>>> a1e80d0fe0d21ff05d847459312e54861b1db26e
 
+##### Configurações das estações clientes: 
+
+Uma interface de rede em modo 'Internal Network'  
+
+##### Configurações do Fortigate: 
+
+Para versão Trial, máximo 2GB de RAM, 1 processador.  
+
+Uma interface de rede em modo 'Bridge', outra em 'Internal Network'
+
+Usuário 'admin', sem senha, irá solicitar criação no primeiro login.  
 
 ---
 <!--
