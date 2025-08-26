@@ -26,10 +26,25 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 - [Qemu](https://www.qemu.org/)  
 
-Para testes de rede neste projeto, usei imagens do Ubuntu Server 24.04 baixadas do site [OsBoxes.org](https://osboxes.org), que são bastante 'cruas' - tem apenas o básico do S.O. instalado, sem ping, vi, nano, edit, etc. Para conectar o servidor à Internet, editei o arquivo '/etc/netplan/01-net-cfg.yaml' conforme abaixo e conectei a VM a uma instância 'Nat' do GNS3.    
+Para testes de rede neste projeto, usei VMs do Ubuntu Server e Bodhi Linux (mais leves) no formato Qemu (.qcow2). Para conectar o servidor à Internet, editei o arquivo '/etc/netplan/01-net-cfg.yaml' conforme abaixo e conectei a VM a uma instância 'Nat' do GNS3.    
+
+A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da interface __virbr0__ que deve estar ativa no host (rede 192.168.122.0/24).
+
+##### Configurações do servidor: 
+
+- Ubuntu Server 24.04
+
+    - Interface conectada à instância NAT do GNS3 (Internet): 192.168.122.10/24  
+
+    - Interface conectada à rede interna 
+
 ##### Configurações das estações clientes: 
 
-Uma interface de rede em modo 'Internal Network'  
+- Bodhi Linux 7.0.0
+
+    - VM pronta baixada de [OsBoxes.org](https://osboxes.org) - VM no formato .vdi, convertida em .qcow2 com _qemu-img convert_
+
+    - Uma interface de rede em modo 'Internal Network'  
 
 
 ---
