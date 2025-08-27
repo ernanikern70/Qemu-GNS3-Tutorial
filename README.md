@@ -80,8 +80,6 @@ network:
         - 10.255.255.1/28
 ```
 
-- Ansible Server
-
 ##### Configurações das estações clientes: 
 
 - Bodhi Linux 7.0.0
