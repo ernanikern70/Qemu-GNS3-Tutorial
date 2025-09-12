@@ -2,7 +2,7 @@
  " Badges ------------------ {{{
  -->
  <!-- Estes badges só funcionarão quando o repositório do github for público -->
- [![Qemu Version](https://img.shields.io/npm/v/qemu?style=flat&logo=qemu&logoColor=white&label=Qemu)](https://www.qemu.org) ![GNS3 Version](https://img.shields.io/npm/v/gns?style=flat&logo=gns3&label=GNS) ![Repo size](https://img.shields.io/github/repo-size/ernanikern70/Qemu-GNS3-Tutorial?label=Repo%20size&style=flat-round) ![GitHub branch status](https://img.shields.io/github/checks-status/ernanikern70/Qemu-GNS3-Tutorial/main) ![GitHub stars](https://img.shields.io/github/stars/ernanikern70/Qemu-GNS3-Tutorial?label=Stars&style=flat-round&color=yellow) ![Last commit](https://img.shields.io/github/last-commit/ernanikern70/Qemu-GNS3-Tutorial?label=Last%20commit&style=flat-round&color=green) ![Open Issues](https://img.shields.io/github/issues/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=red) ![Open PRs](https://img.shields.io/github/issues-pr/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=orange) ![Latest Release](https://img.shields.io/github/v/release/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=brightgreen) <!-- ![Topics](https://img.shields.io/github/topics/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=purple&cacheSeconds=30) -->
+ [!![GNS3 Version](https://img.shields.io/npm/v/gns?style=flat&logo=gns3&label=GNS) [Qemu Version](https://img.shields.io/npm/v/qemu?style=flat&logo=qemu&logoColor=white&label=Qemu)](https://www.qemu.org) ![Repo size](https://img.shields.io/github/repo-size/ernanikern70/Qemu-GNS3-Tutorial?label=Repo%20size&style=flat-round) ![GitHub branch status](https://img.shields.io/github/checks-status/ernanikern70/Qemu-GNS3-Tutorial/main) ![GitHub stars](https://img.shields.io/github/stars/ernanikern70/Qemu-GNS3-Tutorial?label=Stars&style=flat-round&color=yellow) ![Last commit](https://img.shields.io/github/last-commit/ernanikern70/Qemu-GNS3-Tutorial?label=Last%20commit&style=flat-round&color=green) ![Open Issues](https://img.shields.io/github/issues/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=red) ![Open PRs](https://img.shields.io/github/issues-pr/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=orange) ![Latest Release](https://img.shields.io/github/v/release/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=brightgreen) <!-- ![Topics](https://img.shields.io/github/topics/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=purple&cacheSeconds=30) -->
 
 ---
 <!--
@@ -36,7 +36,7 @@ Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizad
 -->
 ## Ambiente
 
-##### Downloads:  
+### Downloads:  
 
 - [GNS3](https://www.gns3.com/software/download)  
 
@@ -50,7 +50,7 @@ A VM do Ubuntu Server foi instalada do zero, pois a imagem do Osboxes era muito 
 
 A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da interface __virbr0__ que deve estar ativa no host (rede 192.168.122.0/24 - virbr0 = 192.168.122.1).
 
-##### Configurações do servidor: 
+### Configurações do servidor: 
 
 - Ubuntu Server 24.04
 
@@ -100,7 +100,7 @@ network:
         - 10.255.255.1/28
 ```
 
-##### Configurações das estações clientes: 
+### Configurações das estações clientes: 
 
 - Bodhi Linux 7.0.0
 
@@ -130,7 +130,7 @@ network:
           - 8.8.8.8
 ```
 
-##### Configurações no host
+### Configurações no host
 
     - Interface _virbr0_ 192.168.122.1: configurada pelo GNS3/Qemu
 
@@ -140,7 +140,7 @@ Se desejar conexão direta aos clientes do GNS3:
 sudo ip route add 10.255.255.0/28 via 192.168.122.10
 ```
 
-Para tornar permanente, editar _/etc/netplan/_ do host, ou em _/etc/systemd/networ/_ (dependendo do renderizador).
+Para tornar permanente, editar _/etc/netplan/_ do host, ou em _/etc/systemd/network/_ (dependendo do renderizador).
 
 
 ---
