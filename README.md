@@ -1,13 +1,31 @@
-# Qemu-GNS3-Tutorial
-
-Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizados.
-
 <!--
  " Badges ------------------ {{{
  -->
-
  <!-- Estes badges só funcionarão quando o repositório do github for público -->
  [![Qemu Version](https://img.shields.io/npm/v/qemu?style=flat&logo=qemu&logoColor=white&label=Qemu)](https://www.qemu.org) ![GNS3 Version](https://img.shields.io/npm/v/gns?style=flat&logo=gns3&label=GNS) ![Repo size](https://img.shields.io/github/repo-size/ernanikern70/Qemu-GNS3-Tutorial?label=Repo%20size&style=flat-round) ![GitHub branch status](https://img.shields.io/github/checks-status/ernanikern70/Qemu-GNS3-Tutorial/main) ![GitHub stars](https://img.shields.io/github/stars/ernanikern70/Qemu-GNS3-Tutorial?label=Stars&style=flat-round&color=yellow) ![Last commit](https://img.shields.io/github/last-commit/ernanikern70/Qemu-GNS3-Tutorial?label=Last%20commit&style=flat-round&color=green) ![Open Issues](https://img.shields.io/github/issues/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=red) ![Open PRs](https://img.shields.io/github/issues-pr/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=orange) ![Latest Release](https://img.shields.io/github/v/release/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=brightgreen) <!-- ![Topics](https://img.shields.io/github/topics/ernanikern70/Qemu-GNS3-Tutorial?style=flat-round&color=purple&cacheSeconds=30) -->
+
+---
+<!--
+" }}}
+-->
+<!--
+" Sumário ---------- {{{
+-->
+### Sumário
+
+- [Introdução](#introdução)
+- [Ambiente](#ambiente)
+
+---
+<!--
+" }}}
+-->
+<!--
+" Introdução --------------- {{{
+-->
+# GNS3 Tutorial
+
+Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizados.
 
 ---
 <!--
@@ -26,7 +44,9 @@ O Qemu deve ser instalado automaticamente, caso negativo:
 
 - [Qemu](https://www.qemu.org/)  
 
-Para testes de rede neste projeto, usei VMs do Ubuntu Server e Bodhi Linux (mais leves) no formato Qemu (.qcow2). A VM Bodhi Linux foi baixada diretamente de [Osboxes](https://osboxes.org), no formato .vdi e convertida para .qcow2 com o comando _qemu-img convert_. A VM do Ubuntu Server foi instalada do zero, pois a imagem do Osboxes era muito 'crua' e estava trazendo dificuldades.
+Para testes de rede neste projeto, usei VMs do Ubuntu Server e Bodhi Linux (mais leves) no formato Qemu (.qcow2).  
+A VM Bodhi Linux foi baixada diretamente de [Osboxes](https://osboxes.org), no formato .vdi e convertida para .qcow2 com o comando _qemu-img convert_.  
+A VM do Ubuntu Server foi instalada do zero, pois a imagem do Osboxes era muito 'crua' e estava trazendo dificuldades.
 
 A instância NAT do GNS3 é a que provê o serviço DHCP às VMs, através da interface __virbr0__ que deve estar ativa no host (rede 192.168.122.0/24 - virbr0 = 192.168.122.1).
 
