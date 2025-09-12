@@ -42,7 +42,21 @@ Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizad
 
 O Qemu deve ser instalado automaticamente, caso negativo, verifique a próxima seção. 
 
-O GNS3 é composto por um servidor e um cliente. O cliente é o aplicativo que abre a interface gráfica, e reúne os componentes do sistema. O servidor é o _Hypervisor_ que executará as máquinas virtuais, que podem usar _Qemu_, _VirtualBox_, _VmWare_, etc. 
+O GNS3 é composto por um servidor e um cliente. O cliente é o aplicativo que roda localmente e abre a interface gráfica, e reúne os componentes do sistema. O servidor é a máquina virtual _Ubuntu_, que pode ser executada em vários _Hypervisors_, como _Qemu_, _VirtualBox_, _VmWare_, etc. 
+
+A utilização do servidor em VM não é obrigatória, e caso não seja usada, teremos o seguinte cenário: 
+
+- O servidor GNS3 rodará na própria máquina local
+- Os dispositivos (roteadores, switches, etc) são emulados diretamente no S.O. via _Dynamips_, _Qemu_ ou _VirtualBox_
+- Funciona bem em topologias pequenas
+- Consume recursos da máquina local
+
+Cenário com uso do servidor VM: 
+
+- A VM roda o _Dynamips_, _Qemu_, _Docker_, _Wireshark_, etc
+- Melhor gerenciamento de recursos
+- Maior compatibilidade
+- Permite usar _Docker_ e tem integração mais fácil com _appliances_ oficiais do GNS3
 
 Nesta documentação, usaremos _Qemu_. 
 
