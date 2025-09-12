@@ -40,7 +40,11 @@ Tutorial pessoal de GNS3 com Qemu, pode conter dados equivocados ou desatualizad
 
 - [GNS3](https://www.gns3.com/software/download)  
 
-O Qemu deve ser instalado automaticamente, caso negativo: 
+O Qemu deve ser instalado automaticamente, caso negativo, verifique a próxima seção. 
+
+O GNS3 é composto por um servidor e um cliente. O cliente é o aplicativo que abre a interface gráfica, e reúne os componentes do sistema. O servidor é o _Hypervisor_ que executará as máquinas virtuais, que podem usar _Qemu_, _VirtualBox_, _VmWare_, etc. 
+
+Nesta documentação, usaremos _Qemu_. 
 
 - [Qemu](https://www.qemu.org/)  
 
